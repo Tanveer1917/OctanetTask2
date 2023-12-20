@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .task-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .task {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            position: relative;
+        }
+
+        .task h2 {
+            color: #333;
+        }
+
+        .task p {
+            color: #555;
+        }
+
+        .task .meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .priority-high {
+            background-color: #ff6961;
+            color: #fff;
+        }
+
+        .priority-medium {
+            background-color: #fdbc4b;
+            color: #333;
+        }
+
+        .priority-low {
+            background-color: #77dd77;
+            color: #333;
+        }
+
+        .due {
+            color: #ff0000;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: #ddd;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            height: 100%;
+            width: 50%; /* Change width to simulate progress */
+            background-color: #4caf50;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <title>Task Management</title>
+</head>
+<body>
+
+    <h1>Website Project Tasks</h1>
+
+    <div class="task-container">
+        <div class="task priority-high">
+            <h2>Task 1: Design Landing Page</h2>
+            <p>Create a visually appealing landing page design.</p>
+            <div class="meta">
+                <span class="due">Due: 2023-01-15</span>
+                <span>Priority: High</span>
+            </div>
+        </div>
+
+        <div class="task priority-medium">
+            <h2>Task 2: Implement Responsive Layout</h2>
+            <p>Ensure the website is responsive on various devices.</p>
+            <div class="meta">
+                <span class="due">Due: 2023-01-20</span>
+                <span>Priority: Medium</span>
+            </div>
+        </div>
+
+        <div class="task priority-low">
+            <h2>Task 3: Optimize Images</h2>
+            <p>Optimize images for faster page loading.</p>
+            <div class="meta">
+                <span class="due">Due: 2023-01-25</span>
+                <span>Priority: Low</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+</body>
+</html>
